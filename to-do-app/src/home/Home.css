@@ -1,0 +1,85 @@
+.dark-theme {
+  --main-bg-color: linear-gradient(
+    to Right,
+    rgb(26, 22, 22),
+    rgb(63, 52, 52),
+    rgb(46, 18, 18),
+    rgb(41, 38, 53)
+  );
+  --main-font-color: #ffcccc;
+  --hover-color-btn: #fff;
+  --show-text-bg-color: #fff;
+  --hover-text-color: #000;
+  --dark-Light-Mode-color: #353030;
+  --box-shadow-toggler: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.light-theme {
+  --main-bg-color: #fff8f8;
+  --main-font-color: rgb(72, 63, 63);
+  --hover-color-btn: rgb(30, 11, 11);
+  --hover-text-color: #fff;
+  --show-text-bg-color: #363636ee;
+  --box-shadow-toggler: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+body {
+  background: var(--main-bg-color);
+  color: var(--main-font-color);
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin: 9rem auto;
+  font-size: 2.4rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  & .top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  & .input-container {
+    display: flex;
+
+    & input {
+      padding: 1.2rem 2.4rem;
+    }
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+button {
+  padding: 1.2rem 1.5rem;
+  background-color: rgb(163, 7, 7);
+  border: 2px solid rgb(163, 7, 7);
+  color: white;
+  font-size: 1.4rem;
+  font-family: inherit;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+aside {
+  position: absolute;
+  left: 111rem;
+  top: 10rem;
+}
+
+/* Mobile Responsive*/
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
