@@ -32,7 +32,7 @@ export const ToDoForm = ({ onAddTodo }) => {
           <input
             type="text"
             className="input-text"
-            placeholder="Enter the task you want to store"
+            placeholder="Enter the task you want"
             onChange={(event) => inputHandler(event.target.value)}
             value={input.content}
           />
